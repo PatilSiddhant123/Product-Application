@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="myCard">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="myLeftCtn">
+                    <form class="myform text-center">
+                        <header>Login</header>
+                        <div class="form-group">
+                          <i class="fa fa-user"></i>
+                          <input class="myInput" type="email" placeholder="Username"  autocomplete="off" [(ngModel)]=u.username name="username">
+                          <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                    <div class="form-group">
+                        <i class="fa fa-lock"></i>
+                        <input class="myInput" placeholder="Password" type="password"  [(ngModel)]=u.password name="password">
+                        <div class="invalid-feedback">please fill out this field</div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="butt"  (click)="login(u)">Sign in</button>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="btnforget">
+                            <a href="#" class="col-md-4"><small>Forgot password?</small></a>
+                        </div>
+                        <div class="btncreate">
+                            <a href="#" class="col-md-4"><small>Create new account</small></a>
+                        </div>
+                    </div>
+                                        
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="myRightCtn">
+                    <div class="Box"><header>Welcome!</header>
+                        <p>Loren ipsum dolor sit amet,consectetur adipicing elit,
+                            sed do eiusmod tempor incidiunt ut labore et dolore amnga
+                            aliqua. Ut enim ad minim veniam. 
+                        </p>
+                            <button type="button" class="butt_out" >Learn More</button>
+                    
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+                          
+    </div>
+    
+</div>
